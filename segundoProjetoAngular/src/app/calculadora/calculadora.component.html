@@ -1,0 +1,9 @@
+<div class="container">
+    <input type="text" #num1 placeholder="Primeiro numero">
+    <input type="text" #num2 placeholder="Segundo Numero">
+    <button (click)="soma(num1.value,num2.value)">Somar</button>
+    <button (click)="subtrai(num1.value,num2.value)">Subtrair</button>
+    <button (click)="multiplica(num1.value,num2.value)">Multipliplar</button>
+    <button (click)="divide(num1.value,num2.value)">Dividir</button>
+    <p>Resultado: {{resultado}}</p>
+</div>

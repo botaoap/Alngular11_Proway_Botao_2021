@@ -1,0 +1,7 @@
+<div class="container">
+    <input type="text" #user placeholder="Nome">
+    <input type="password" #pwd placeholder="Senha">
+    <button (click)="setUsername(user.value); setPassword(pwd.value)">Confirmar</button>
+    <p>Nome: {{username}}</p>
+    <p>Senha: {{password}}</p>
+  </div>
