@@ -14,8 +14,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Verificar se NodeJS está instalado: node --version
 * Instalar se não tiver instaldo: [NodeJS](https://nodejs.org/en/download/) 
 * Get Started Angular 11: [Angular](https://angular.io/guide/what-is-angular) 
-* 
-* 
 
 ## Duvidas Angular
-- [Code terminal](codeTerminal.md)
+- Comandos no terminal: [Terminal](codeTerminal.md)
