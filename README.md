@@ -17,5 +17,5 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * 
 * 
 
-## Duvidas
-- link
+## Duvidas Angular
+- [Code terminal](codeTerminal.md)
