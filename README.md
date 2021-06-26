@@ -1,4 +1,4 @@
-# # Angular
+# # Angular 11
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
@@ -16,3 +16,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * 
 * 
 
+## Links
+- 
+- [w3schools](https://www.w3schools.com/angular/default.asp)
+- 
