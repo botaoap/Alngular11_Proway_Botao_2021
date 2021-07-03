@@ -1,0 +1,45 @@
+<p>angular-template works!</p>
+<!-- if and else with component in angular -->
+<h1>Aula 2</h1>
+<hr />
+<h2 *ngIf="show1">
+    Visível se show for com valor True
+</h2>
+<button (click)="setShow1()">Show</button>
+{{show1}}
+
+<hr />
+<!-- create template  for show else-->
+<h1 *ngIf="show2 else blockElse">
+    if show true
+</h1>
+
+<ng-template #blockElse>
+    <h1>Bloco else</h1>
+</ng-template>
+
+<button (click)="setShow2()">Switch Else</button>
+{{show2}}
+<hr />
+<!-- create tempalte for test string -->
+<h1 *ngIf="showString=='yes'; then ifBlock else elseBlock">
+    Teste string
+</h1>
+
+<ng-template #ifBlock>
+    <h1>bloco if</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h1>bloco else</h1>
+</ng-template>
+
+<button (click)="setStringTrue()">True</button>
+<button (click)="setStringFalse()">False</button>
+<button (click)="setString()">Switch</button>
+{{showString}}
+
+<hr />
+
+
+
