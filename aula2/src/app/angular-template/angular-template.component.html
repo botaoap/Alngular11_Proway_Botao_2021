@@ -1,45 +1,56 @@
-<p>angular-template works!</p>
-<!-- if and else with component in angular -->
-<h1>Aula 2</h1>
-<hr />
-<h2 *ngIf="show1">
-    Visível se show for com valor True
-</h2>
-<button (click)="setShow1()">Show</button>
-{{show1}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="margin">
+        <!-- if and else with component in angular -->
+        <h2 *ngIf="show1">
+            Visível se show for com valor True
+        </h2>
+        <button class="btn btn-outline-dark" (click)="setShow1()">Show</button>
+        {{show1}}
 
-<hr />
-<!-- create template  for show else-->
-<h1 *ngIf="show2 else blockElse">
-    if show true
-</h1>
+        <hr />
+        <!-- create template  for show else-->
+        <h1 *ngIf="show2 else blockElse">
+            if show true
+        </h1>
 
-<ng-template #blockElse>
-    <h1>Bloco else</h1>
-</ng-template>
+        <ng-template #blockElse>
+            <h1>Bloco else</h1>
+        </ng-template>
 
-<button (click)="setShow2()">Switch Else</button>
-{{show2}}
-<hr />
-<!-- create tempalte for test string -->
-<h1 *ngIf="showString=='yes'; then ifBlock else elseBlock">
-    Teste string
-</h1>
+        <button class="btn btn-outline-dark" (click)="setShow2()">Switch Else</button>
+        {{show2}}
+        <hr />
+        <!-- create tempalte for test string -->
+        <h1 *ngIf="showString=='yes'; then ifBlock else elseBlock">
+            Teste string
+        </h1>
 
-<ng-template #ifBlock>
-    <h1>bloco if</h1>
-</ng-template>
+        <ng-template #ifBlock>
+            <h1>bloco if</h1>
+        </ng-template>
 
-<ng-template #elseBlock>
-    <h1>bloco else</h1>
-</ng-template>
+        <ng-template #elseBlock>
+            <h1>bloco else</h1>
+        </ng-template>
 
-<button (click)="setStringTrue()">True</button>
-<button (click)="setStringFalse()">False</button>
-<button (click)="setString()">Switch</button>
-{{showString}}
+        <button class="btn btn-outline-dark" (click)="setStringTrue()">True</button>
+        <button class="btn btn-outline-dark" (click)="setStringFalse()">False</button>
+        <button class="btn btn-outline-dark" (click)="setString()">Switch</button>
+        {{showString}}
 
-<hr />
-
+        <hr />
+    </div>
+</body>
 
 
