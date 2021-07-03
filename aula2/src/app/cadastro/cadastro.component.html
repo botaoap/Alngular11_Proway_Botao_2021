@@ -1,7 +1,42 @@
-<p>cadastro works!</p>
-<form #simplForm="ngForm" (ngSubmit)="getValue(simplForm.value)">
-    <input type="text" ngModel name="nome" placeholder="Nome"><br>
-    <input type="text" ngModel name="idade" placeholder="Idade"><br>
-    <input type="text" ngModel name="email" placeholder="Email"><br>
-    <button>Salvar</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form #simplForm="ngForm" (ngSubmit)="getValue(simplForm.value)">
+        <div>
+            <input type="text" required #nome="ngModel" ngModel name="nome" placeholder="Nome"><br>
+            <span class="error" *ngIf="nome.invalid">Nome é obrigatório</span>
+        </div>
+        <div>
+            <input type="text"  required #idade="ngModel" ngModel name="idade" placeholder="Idade"><br>
+            <span class="error" *ngIf="idade.invalid">Idade é obrigatória</span>
+        </div>
+        <div>
+            <input type="text"  required #email="ngModel" ngModel name="email" placeholder="Email"><br>
+            <span class="error" *ngIf="email.invalid">Email é obrigatório</span>
+        </div>
+        <button class="btn btn-outline-dark">Salvar</button>
+    </form>
+    <h1>Lista de contatos</h1>
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Idade</td>
+            <td>Email</td>
+        </tr>
+        <tr *ngFor="let ct of contato">
+            <td>{{ct.nome}}</td>
+            <td>{{ct.idade}}</td>
+            <td>{{ct.email}}</td>
+
+        </tr>
+    </table>
+</body>

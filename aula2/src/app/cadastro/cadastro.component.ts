@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailValidator } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
@@ -11,9 +12,21 @@ export class CadastroComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  show = true;
+  contato = [{
+    nome:'',
+    idade:'',
+    email:'',
+  }];
   getValue(data:any){
-    console.warn(data);
+    this.contato.push(data);
   }
+  setShow(){
+    this.getValue;
+    this.show = !this.show;
+  }
+  
+
+  
 
 }
