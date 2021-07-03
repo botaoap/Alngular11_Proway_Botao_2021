@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AngularTemplateComponent } from './angular-template/angular-template.component';
@@ -25,8 +26,8 @@ const appRoutes: Routes=[
     BrowserModule,
     // Import FormsModule to use in cadastro.component.html form
     FormsModule,
-    RouterModule.forRoot(appRoutes)
-
+    RouterModule.forRoot(appRoutes),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
