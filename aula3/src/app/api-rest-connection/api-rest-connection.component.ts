@@ -14,8 +14,6 @@ export class ApiRestConnectionComponent {
   constructor(private users:UserService) {
     this.users.getData().subscribe( data => {
       this.listaUser = data;
-      console.warn(data)
     })
-   }
-
+  }
 }

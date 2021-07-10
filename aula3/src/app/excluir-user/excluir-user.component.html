@@ -1,5 +1,10 @@
 <div class="margin">
-    <p>Lista de Usuários</p>
+    <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control"  #id ngModel name="id" placeholder="Digite o ID">
+    </div>
+        <button class="btn btn-outline-dark" (click)="deleteId(id.value)">Excluir</button>
+</div>
+<div class="margin">
     <table class="table table-striped table-dark">
         <thead>
             <tr>

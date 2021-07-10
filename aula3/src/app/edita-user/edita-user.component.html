@@ -1,0 +1,22 @@
+<div class="margin">
+    <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control"  #id ngModel name="id" placeholder="Digite o ID">
+    </div>
+        <button class="btn btn-outline-dark" (click)="getId(id.value)">Pesquisar</button>
+</div>
+    <div class="margin">
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <td>{{userID.id}}</td>
+            <td>{{userID.title}}</td>
+            <td>{{userID.completed}}</td>
+        </tbody>
+    </table>
+</div> 

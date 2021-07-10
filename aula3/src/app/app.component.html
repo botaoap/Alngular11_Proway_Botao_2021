@@ -2,11 +2,19 @@
     <h1>Angular 11 Aula 3 Routes</h1>
     <nav>
         <ul>
-            <li><a routerLink="/" routerLinkActive="active">Home    </a></li>
+            <li><a routerLink="/" routerLinkActive="active">Home</a></li>
             <li><a routerLink="/api-rest" routerLinkActive="active">Concetar Api</a></li>
+            <li><a routerLink="/listar">Listar Usuario</a></li>
+            <li><a routerLink="/cadastrar">Cadastrar Usuario</a></li>
+            <li><a routerLink="/listarOne" routerLinkActive="active">Consultar usuario por ID</a></li>
+            <li><a routerLink="/excluir">Excluir Usuario</a></li>
         </ul>
     </nav>
 </div>
+
+<hr>
+
 <router-outlet></router-outlet>
 
+<!-- <app-excluir-user></app-excluir-user> -->
 <!-- <app-api-rest-connection></app-api-rest-connection> -->

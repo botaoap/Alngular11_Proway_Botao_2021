@@ -13,4 +13,14 @@ export class UserService {
     let url='https://jsonplaceholder.typicode.com/todos';
     return this.http.get(url);
   }
+
+  getId(id:any){
+    let url='https://jsonplaceholder.typicode.com/todos/' + id;
+    return this.http.get(url);
+  }
+
+  delete(id: any){
+    let url='https://jsonplaceholder.typicode.com/todos/' + id;
+    return this.http.delete(url);
+  }
 }
