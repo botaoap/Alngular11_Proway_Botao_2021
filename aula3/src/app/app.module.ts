@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Router, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 // Using library Http to use API
