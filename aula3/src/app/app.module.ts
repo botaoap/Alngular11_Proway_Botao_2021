@@ -2,17 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ConnectApiRestComponent } from './connect-api-rest/connect-api-rest.component';
+// Using library Http to use API
+import { HttpClientModule} from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ApiRestConnectionComponent } from './api-rest-connection/api-rest-connection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConnectApiRestComponent
+    ApiRestConnectionComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    NgbModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  schemas: [ ],
+  providers: [ ],
+  bootstrap: [ AppComponent ],
+  
 })
 export class AppModule { }
