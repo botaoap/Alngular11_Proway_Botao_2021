@@ -14,6 +14,6 @@ Instalar Postman in Linux mint
 
 Levantar um servidor com Json
 Link: https://medium.com/@andrewchanm/criando-uma-api-rest-fake-com-json-server-9a312127f6d6
-- npm install -g json-serve
-- irá gerar um gb.json no projeto
+- npm install -g json-server
+- criar uma pasta db.json no projeto
 - executar no prpjeto: json-server db.json
