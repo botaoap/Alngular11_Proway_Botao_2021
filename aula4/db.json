@@ -1,12 +1,24 @@
 {
-    "users": [{
-        "id": 1,
-        "name": "Andrew",
-        "location": "Brazil"
-    }, 
+  "users": [
     {
-        "id": 2,
-        "name": "Julio",
-        "location": "Canadá"
-    }]
+      "id": 1,
+      "name": "Andrew",
+      "location": "Brazil"
+    },
+    {
+      "id": 2,
+      "name": "Julio",
+      "location": "Canadá"
+    },
+    {
+      "id": 3,
+      "name": "Sandro",
+      "location": "Itália"
+    },
+    {
+      "name": "Teste",
+      "location": "Teste",
+      "id": 4
+    }
+  ]
 }
