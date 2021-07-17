@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-cadastrar',
   templateUrl: './cadastrar.component.html',
   styleUrls: ['./cadastrar.component.css']
 })
-export class CadastrarComponent implements OnInit {
+export class CadastrarComponent {
 
-  constructor() { }
+  constructor(private users:UserService) { }
 
-  ngOnInit(): void {
+  userPost: any;
+
+  postUser(name: any, local: any){
+    this.users.postUser(name,local).subscribe( result => {
+      this.userPost = result;
+    })
   }
-
 }

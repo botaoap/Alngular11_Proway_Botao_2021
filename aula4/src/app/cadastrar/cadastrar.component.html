@@ -1,1 +1,25 @@
-<p>cadastrar works!</p>
+<div class="margin">
+    <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control"  #name ngModel name="id" placeholder="Digite o Nome">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control"  #local ngModel name="id" placeholder="Digite o País">
+    </div>
+        <button class="btn btn-outline-dark" (click)="postUser(name.value, local.value)">Cadastrar</button>
+</div>
+    <div class="margin">
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <td>{{userPost.id}}</td>
+            <td>{{userPost.name}}</td>
+            <td>{{userPost.location}}</td>
+        </tbody>
+    </table>
+</div> 
