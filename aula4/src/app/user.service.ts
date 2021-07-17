@@ -10,8 +10,28 @@ export class UserService {
 
   // pegar as informações de uma API
   getData(){
+    // let é uma variável que fica apenas dentro desta função
     let url = 'http://localhost:3000/users';
     return this.http.get(url);
+  }
+
+  getId(id: any){
+    let url = 'http://localhost:3000/users/' + id;
+    return this.http.get(url);
+  }
+
+  postUser(name: any, local:any){
+    let url = 'http://localhost:3000/users/';
+    let parameters = {
+      "name": name,
+      "location": local
+    }
+    return this.http.post(url,parameters);
+  }
+
+  deleteUser(id: any){
+    let url = 'http://localhost:3000/users/' + id;
+    return this.http.delete(url);
   }
 
 
