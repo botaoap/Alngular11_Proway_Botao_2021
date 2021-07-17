@@ -20,14 +20,19 @@ export class UserService {
     return this.http.get(url);
   }
 
-  postUser(name: any, local:any){
+  postWithForm(form:any){
     let url = 'http://localhost:3000/users/';
-    let parameters = {
-      "name": name,
-      "location": local
-    }
-    return this.http.post(url,parameters);
+    return this.http.post(url,form);
   }
+  // Não é viável deste jeito
+  // postUser(name: any, local:any){
+  //   let url = 'http://localhost:3000/users/';
+  //   let parameters = {
+  //     "name": name,
+  //     "location": local
+  //   }
+  //   return this.http.post(url,parameters);
+  // }
 
   deleteUser(id: any){
     let url = 'http://localhost:3000/users/' + id;
