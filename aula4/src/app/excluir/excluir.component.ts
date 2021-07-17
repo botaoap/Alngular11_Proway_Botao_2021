@@ -9,13 +9,19 @@ import { UserService } from '../user.service';
 })
 export class ExcluirComponent {
 
-  constructor(private users:UserService) { }
+  listaUser: any
+  constructor(private users:UserService) {
+    this.users.getData().subscribe( result => {
+      this.listaUser = result;
+    })
+   }
 
   deleteID: any;
 
   deleteUser(id: any){
     this.users.deleteUser(id).subscribe( result => {
       this.deleteID = result;
+      location.reload();
     })
   }
 }

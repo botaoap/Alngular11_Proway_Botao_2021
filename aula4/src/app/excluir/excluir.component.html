@@ -4,22 +4,24 @@
     </div>
         <button class="btn btn-outline-dark" (click)="deleteUser(id.value)">Excluir</button>
 </div>
-<!-- <div class="margin">
+<div class="margin">
     <table class="table table-striped table-dark">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Location</th>
+                <th>Ações</th>
             </tr>
         </thead>
-        <tbody> -->
+        <tbody>
             <!-- Loop For -->
-            <!--<tr *ngFor='let user of deleteID'>
+            <tr *ngFor='let user of listaUser'>
                 <td>{{user.id}}</td>
                 <td>{{user.name}}</td>
                 <td>{{user.location}}</td>
+                <td><button (click)="deleteUser(user.id)">Excluir</button></td>
             </tr>
         </tbody>
     </table>
-</div> -->
+</div> 
