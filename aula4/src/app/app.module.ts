@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ApiConnectionComponent } from './api-connection/api-connection.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
 
 const navRoutes: Routes = [
   {path: 'conecta-api', component: ApiConnectionComponent}
@@ -14,7 +15,7 @@ const navRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent, 
-    ApiConnectionComponent
+    ApiConnectionComponent, CadastrarComponent
   ],
   imports: [
     BrowserModule,
